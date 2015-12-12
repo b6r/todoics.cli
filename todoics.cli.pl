@@ -200,7 +200,6 @@ sub showToDos {
  		my $hrDate = &getHRDateString($todo{'DUE'});
 		my $dueEpoch = int &dateTimeStringtoEpoch($todo{'DUE'});
 		my $inTime = $dueEpoch - (time-(60*60*24));
-		print "$dueEpoch - " . (time-(60*60*24)) . " - $inTime\n";
 
 		my $summary = $todo{'SUMMARY'};
 		if ($todo{'STATUS'} eq 'COMPLETED') {
